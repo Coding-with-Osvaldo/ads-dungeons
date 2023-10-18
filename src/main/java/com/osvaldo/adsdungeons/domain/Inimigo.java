@@ -30,5 +30,4 @@ public class Inimigo implements Serializable {
     @ManyToMany(mappedBy = "inimigos")
     List<Personagem> personagems = new ArrayList<>();
 
-
 }

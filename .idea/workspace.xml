@@ -5,7 +5,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f87d91a6-4756-4117-8e5c-241c4b4ed732" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.3/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.3/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.3/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.3/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.3/dependencies-accessors/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.3/dependencies-accessors/gc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.3/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.3/fileChanges/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.3/fileChanges/last-build.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.3/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.3/gc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/osvaldo/adsdungeons/AdsdungeonsApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/osvaldo/adsdungeons/AdsdungeonsApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/osvaldo/adsdungeons/domain/Personagem.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/osvaldo/adsdungeons/domain/Personagem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Arma.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Arma.class.uniqueId0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Atirador.class.uniqueId4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Feitico.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Guerreiro.class.uniqueId3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Invocador.class.uniqueId5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Mago.class.uniqueId2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Minion.class.uniqueId7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Personagem.class.uniqueId6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/AdsdungeonsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/AdsdungeonsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Arma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Arma.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Armadura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Armadura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Atirador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Atirador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Feitico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Feitico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Guerreiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Guerreiro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Inimigo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Inimigo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Invocador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Invocador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Mago.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Mago.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Minion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Minion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Personagem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Personagem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Usuario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/osvaldo/adsdungeons/AdsdungeonsApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/osvaldo/adsdungeons/AdsdungeonsApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,10 +65,24 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
+        <option value="Record" />
       </list>
     </option>
   </component>
@@ -30,9 +92,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2WidlnYig2jNxeLuvCbrA90LBgU" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -56,10 +118,23 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "spring.configuration.checksum": "07bcb7a892999f755bced913b8b6ace1",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AdsdungeonsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="adsdungeons.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.osvaldo.adsdungeons.AdsdungeonsApplication" />
@@ -76,11 +151,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697219488162</updated>
-      <workItem from="1697219489162" duration="4601000" />
+      <workItem from="1697219489162" duration="4815000" />
+      <workItem from="1697283511008" duration="270000" />
+      <workItem from="1697568292719" duration="846000" />
+      <workItem from="1697624153575" duration="536000" />
+      <workItem from="1697625063193" duration="994000" />
+      <workItem from="1697650990543" duration="6028000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
