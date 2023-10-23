@@ -1,6 +1,8 @@
 package com.osvaldo.adsdungeons.domain;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.OneToOne;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -16,6 +18,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Atirador extends Personagem implements Serializable {
+    @Column(columnDefinition = "integer not null default 0")
     private Integer municao;
 
     @OneToOne

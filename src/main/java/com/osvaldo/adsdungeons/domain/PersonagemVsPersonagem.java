@@ -1,5 +1,6 @@
 package com.osvaldo.adsdungeons.domain;
 
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -7,8 +8,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.UUID;
 
 @Entity
@@ -16,18 +15,15 @@ import java.util.UUID;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Inimigo implements Serializable {
+public class PersonagemVsPersonagem implements Serializable {
+
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID id;
-    private String nome;
-    private Integer dano;
-    private Float vida;
+    private UUID ID;
 
-    @ElementCollection
-    private List<String> habilidades = new ArrayList<>();
+    @ManyToOne
+    Personagem personagem1;
 
-    @OneToMany
-    List<PersonagemVsInimigo> batalhas;
-
+    @ManyToOne
+    Personagem personagem2;
 }

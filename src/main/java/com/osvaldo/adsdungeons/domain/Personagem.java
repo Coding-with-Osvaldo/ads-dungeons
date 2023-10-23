@@ -16,7 +16,7 @@ public abstract class Personagem {
     private UUID id;
     private String nome;
     private Integer vida;
-
+    /*
     @ManyToMany
     @JoinTable(
             name = "PersonagensVsInimigos",
@@ -24,7 +24,8 @@ public abstract class Personagem {
             inverseJoinColumns = @JoinColumn(name = "inimigo_id")
     )
     List<Inimigo> inimigos = new ArrayList<>();
-
+    */
+    /*
     @ManyToMany
     @JoinTable(
             name = "PersonagensVsPersonagens",
@@ -32,6 +33,13 @@ public abstract class Personagem {
             inverseJoinColumns = @JoinColumn(name = "rival_id")
     )
     List<Personagem> personagems = new ArrayList<>();
+     */
+
+    @OneToMany
+    List<PersonagemVsPersonagem> batalhas;
+
+    @OneToMany
+    List<PersonagemVsInimigo> confrontos;
 
     @ManyToOne
     Armadura armadura;
