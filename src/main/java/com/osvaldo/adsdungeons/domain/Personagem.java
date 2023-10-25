@@ -16,6 +16,8 @@ public abstract class Personagem {
     private UUID id;
     private String nome;
     private Integer vida;
+
+    private Character type;
     /*
     @ManyToMany
     @JoinTable(
