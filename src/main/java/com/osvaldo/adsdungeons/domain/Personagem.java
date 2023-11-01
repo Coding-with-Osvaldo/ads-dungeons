@@ -1,6 +1,8 @@
 package com.osvaldo.adsdungeons.domain;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -9,6 +11,8 @@ import java.util.UUID;
 
 
 @Entity @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+@Getter
+@Setter
 public abstract class Personagem {
 
     @Id

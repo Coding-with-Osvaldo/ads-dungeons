@@ -5,10 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f87d91a6-4756-4117-8e5c-241c4b4ed732" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.3/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/osvaldo/adsdungeons/AdsdungeonsApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/osvaldo/adsdungeons/AdsdungeonsApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/AdsdungeonsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/AdsdungeonsApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Personagem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Personagem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/repositories/ArmaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/repositories/ArmaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/repositories/InimigosRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/repositories/InimigosRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/repositories/MinionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/repositories/MinionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/repositories/PersonagemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/repositories/PersonagemRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/repositories/PersonagemVsInimigoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/repositories/PersonagemVsInimigoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/repositories/PersonagemVsPersonagemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/repositories/PersonagemVsPersonagemRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +49,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Record" />
         <option value="Interface" />
+        <option value="Record" />
         <option value="Class" />
       </list>
     </option>
@@ -118,7 +132,8 @@
       <workItem from="1697738719234" duration="2552000" />
       <workItem from="1697796619237" duration="67000" />
       <workItem from="1698082310828" duration="5129000" />
-      <workItem from="1698228618113" duration="1279000" />
+      <workItem from="1698228618113" duration="5833000" />
+      <workItem from="1698858900506" duration="1919000" />
     </task>
     <servers />
   </component>
