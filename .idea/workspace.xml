@@ -11,18 +11,12 @@
       <change beforePath="$PROJECT_DIR$/.gradle/8.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.3/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/osvaldo/adsdungeons/AdsdungeonsApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/osvaldo/adsdungeons/AdsdungeonsApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/osvaldo/adsdungeons/domain/Personagem.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/osvaldo/adsdungeons/domain/Personagem.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/AdsdungeonsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/AdsdungeonsApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Personagem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Personagem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/repositories/ArmaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/repositories/ArmaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/repositories/InimigosRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/repositories/InimigosRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/repositories/MinionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/repositories/MinionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/repositories/PersonagemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/repositories/PersonagemRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/repositories/PersonagemVsInimigoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/repositories/PersonagemVsInimigoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/repositories/PersonagemVsPersonagemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/repositories/PersonagemVsPersonagemRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +31,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand />
@@ -81,8 +78,8 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/joseneto5689/Documentos/WorkFlow/Projects/adsdungeons&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;test&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/joseneto5689/Documentos/WorkFlow/Projects/adsdungeons/src/main/java/com/osvaldo/adsdungeons/domain&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -93,7 +90,62 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle clean" />
+      <command value="gradle build" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AdsdungeonsApplication">
+    <configuration name="adsdungeons [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="adsdungeons [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -112,6 +164,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.adsdungeons [build]" />
+        <item itemvalue="Gradle.adsdungeons [clean]" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -133,12 +191,25 @@
       <workItem from="1697796619237" duration="67000" />
       <workItem from="1698082310828" duration="5129000" />
       <workItem from="1698228618113" duration="5833000" />
-      <workItem from="1698858900506" duration="1919000" />
+      <workItem from="1698858900506" duration="3534000" />
+      <workItem from="1698941126587" duration="5750000" />
+      <workItem from="1698951614609" duration="3006000" />
+      <workItem from="1699009048406" duration="2795000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.hibernate.HibernateException" package="org.hibernate" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
