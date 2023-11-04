@@ -40,11 +40,6 @@ public abstract class Personagem {
     List<Personagem> personagems = new ArrayList<>();
      */
 
-    @OneToMany
-    List<PersonagemVsPersonagem> batalhas;
-
-    @OneToMany
-    List<PersonagemVsInimigo> confrontos;
 
     @ManyToOne
     Armadura armadura;

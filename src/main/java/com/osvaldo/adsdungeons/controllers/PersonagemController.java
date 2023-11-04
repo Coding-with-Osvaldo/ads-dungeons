@@ -24,8 +24,8 @@ public class PersonagemController {
     PersonagemRepository personagemRepository;
 
     @GetMapping("/personagens")
-    public ResponseEntity<List<Object>> getInimigos(){
-        List<Object> result = personagemRepository.findAllClass();
+    public ResponseEntity<List<Personagem>> getInimigos(){
+        List<Personagem> result = personagemRepository.findAllClass();
         return ResponseEntity.status(HttpStatus.OK).body(result);
     }
 }

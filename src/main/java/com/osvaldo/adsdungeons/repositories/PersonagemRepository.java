@@ -9,5 +9,5 @@ import java.util.UUID;
 
 public interface PersonagemRepository extends JpaRepository<Personagem, UUID> {
     @Query(value = "select id, nome, type from Guerreiro union select id, nome,type from Atirador union select id, nome, type from Invocador union select id, nome, type from Mago", nativeQuery = true)
-    List<Object> findAllClass();
+    List<Personagem> findAllClass();
 }
