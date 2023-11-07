@@ -27,7 +27,5 @@ public class Inimigo implements Serializable {
     @ElementCollection
     private List<String> habilidades = new ArrayList<>();
 
-    @OneToMany
-    List<PersonagemVsInimigo> batalhas;
 
 }

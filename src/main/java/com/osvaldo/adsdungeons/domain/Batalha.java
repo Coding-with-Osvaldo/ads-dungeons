@@ -7,22 +7,21 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.io.Serializable;
+import java.util.List;
 import java.util.UUID;
 
 @Entity
 @Getter
 @Setter
-@NoArgsConstructor
 @AllArgsConstructor
-public class Minion implements Serializable {
+@NoArgsConstructor
+public class Batalha implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
-    private Float vida;
-    private Integer dano;
-    private char alvo;
-    private Integer custo;
 
-    @ManyToOne
-    Invocador invocador;
+    @OneToMany
+    private List<Personagem> personagensList;
+    @OneToMany
+    private List<Inimigo> inimigosList;
 }

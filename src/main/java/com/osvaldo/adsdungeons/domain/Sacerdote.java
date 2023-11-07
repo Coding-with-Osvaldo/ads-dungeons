@@ -16,9 +16,6 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Invocador extends Personagem implements Serializable {
+public class Sacerdote extends Personagem implements Serializable {
     private Integer mana;
-
-    @OneToMany
-    List<Minion> minions = new ArrayList<>();
 }
