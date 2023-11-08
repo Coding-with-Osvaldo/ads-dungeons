@@ -2,6 +2,7 @@ package com.osvaldo.adsdungeons.domain;
 
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.OneToOne;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -16,7 +17,9 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Guerreiro extends Personagem implements Serializable {
-    private Float forca;
+    private Float forca = 1.5f;
+
+    private Character type = 'G';
 
     @OneToOne
     Arma arma;

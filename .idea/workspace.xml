@@ -11,23 +11,22 @@
       <change beforePath="$PROJECT_DIR$/.gradle/8.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.3/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/osvaldo/adsdungeons/domain/Inimigo.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/osvaldo/adsdungeons/domain/Inimigo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/osvaldo/adsdungeons/domain/Personagem.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/osvaldo/adsdungeons/domain/Personagem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/osvaldo/adsdungeons/domain/Invocador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/osvaldo/adsdungeons/domain/Minion.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/config/WebSocketConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/controllers/ArmaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/controllers/ArmaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/controllers/ArmaduraController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/controllers/ArmaduraController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/controllers/AtiradorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/controllers/AtiradorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/controllers/GuerreiroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/controllers/GuerreiroController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/controllers/MinionController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/controllers/PersonagemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/controllers/PersonagemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Inimigo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Inimigo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Invocador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Sacerdote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Minion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/dtos/GuerreiroDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/dtos/GuerreiroDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/dtos/MinionDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/repositories/MinionRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/repositories/PersonagemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/repositories/PersonagemRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/controllers/MagoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/controllers/MagoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/controllers/SacerdoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/controllers/SacerdoteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Atirador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Atirador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Guerreiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Guerreiro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Mago.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Mago.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Personagem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Personagem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Sacerdote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/domain/Sacerdote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/dtos/AtiradorDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/dtos/AtiradorDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/dtos/SacerdoteDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osvaldo/adsdungeons/dtos/SacerdoteDTO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +207,8 @@
       <workItem from="1699009048406" duration="2795000" />
       <workItem from="1699099236951" duration="484000" />
       <workItem from="1699292505242" duration="4811000" />
-      <workItem from="1699358991912" duration="1781000" />
+      <workItem from="1699358991912" duration="2099000" />
+      <workItem from="1699464014466" duration="5000000" />
     </task>
     <servers />
   </component>

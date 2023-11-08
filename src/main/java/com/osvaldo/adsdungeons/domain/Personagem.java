@@ -19,8 +19,7 @@ public abstract class Personagem {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
     private String nome;
-    private Integer vida;
-    private Character type;
+    private Integer vida = 100;
     /*
     @ManyToMany
     @JoinTable(

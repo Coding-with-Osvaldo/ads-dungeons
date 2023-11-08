@@ -2,8 +2,10 @@ package com.osvaldo.adsdungeons.controllers;
 
 import com.osvaldo.adsdungeons.domain.Atirador;
 import com.osvaldo.adsdungeons.domain.Atirador;
+import com.osvaldo.adsdungeons.dtos.AtiradorDTO;
 import com.osvaldo.adsdungeons.dtos.GuerreiroDTO;
 import com.osvaldo.adsdungeons.dtos.HPDTO;
+import com.osvaldo.adsdungeons.dtos.PersonagemDTO;
 import com.osvaldo.adsdungeons.repositories.AtiradorRepository;
 import jakarta.validation.Valid;
 import org.springframework.beans.BeanUtils;
@@ -30,9 +32,9 @@ public class AtiradorController {
     }
 
     @PostMapping("/atirador")
-    public ResponseEntity<Atirador> saveAtirador(@RequestBody @Valid GuerreiroDTO guerreiroDTO){
+    public ResponseEntity<Atirador> saveAtirador(@RequestBody @Valid PersonagemDTO atiradorDTO){
         var atirador = new Atirador();
-        BeanUtils.copyProperties(guerreiroDTO, atirador);
+        BeanUtils.copyProperties(atiradorDTO, atirador);
         return ResponseEntity.status(HttpStatus.CREATED).body(atiradorRepository.save(atirador));
     }
 

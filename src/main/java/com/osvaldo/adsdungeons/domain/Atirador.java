@@ -19,7 +19,9 @@ import java.io.Serializable;
 @AllArgsConstructor
 public class Atirador extends Personagem implements Serializable {
     @Column(columnDefinition = "integer not null default 0")
-    private Integer municao;
+    private Integer municao = 100;
+
+    private Character type = 'A';
 
     @OneToOne
     Arma arma;

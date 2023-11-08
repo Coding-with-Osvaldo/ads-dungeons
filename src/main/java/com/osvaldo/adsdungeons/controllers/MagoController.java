@@ -3,6 +3,7 @@ package com.osvaldo.adsdungeons.controllers;
 import com.osvaldo.adsdungeons.domain.Mago;
 import com.osvaldo.adsdungeons.dtos.HPDTO;
 import com.osvaldo.adsdungeons.dtos.MagoDTO;
+import com.osvaldo.adsdungeons.dtos.PersonagemDTO;
 import com.osvaldo.adsdungeons.repositories.MagoRepository;
 import jakarta.validation.Valid;
 import org.springframework.beans.BeanUtils;
@@ -29,7 +30,7 @@ public class MagoController {
     }
 
     @PostMapping("/mago")
-    public ResponseEntity<Mago> saveMago(@RequestBody @Valid MagoDTO magoDTO){
+    public ResponseEntity<Mago> saveMago(@RequestBody @Valid PersonagemDTO magoDTO){
         var mago = new Mago();
         BeanUtils.copyProperties(magoDTO, mago);
         return ResponseEntity.status(HttpStatus.CREATED).body(magoRepository.save(mago));

@@ -4,6 +4,7 @@ import com.osvaldo.adsdungeons.domain.Guerreiro;
 import com.osvaldo.adsdungeons.domain.Guerreiro;
 import com.osvaldo.adsdungeons.dtos.GuerreiroDTO;
 import com.osvaldo.adsdungeons.dtos.HPDTO;
+import com.osvaldo.adsdungeons.dtos.PersonagemDTO;
 import com.osvaldo.adsdungeons.repositories.GuerreiroRepository;
 import jakarta.validation.Valid;
 import org.springframework.beans.BeanUtils;
@@ -30,7 +31,7 @@ public class GuerreiroController {
     }
 
     @PostMapping("/guerreiro")
-    public ResponseEntity<Guerreiro> saveGuerreiro(@RequestBody @Valid GuerreiroDTO guerreiroDTO){
+    public ResponseEntity<Guerreiro> saveGuerreiro(@RequestBody @Valid PersonagemDTO guerreiroDTO){
         var guerreiro = new Guerreiro();
         BeanUtils.copyProperties(guerreiroDTO, guerreiro);
         return ResponseEntity.status(HttpStatus.CREATED).body(guerreiroRepository.save(guerreiro));

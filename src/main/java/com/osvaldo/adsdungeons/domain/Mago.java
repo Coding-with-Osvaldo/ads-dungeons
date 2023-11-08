@@ -16,7 +16,9 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Mago extends Personagem implements Serializable {
-    private Integer mana;
+    private Integer mana = 100;
+
+    private Character type = 'M';
 
     @ManyToMany
     @JoinTable(

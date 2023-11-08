@@ -4,6 +4,7 @@ import com.osvaldo.adsdungeons.domain.Mago;
 import com.osvaldo.adsdungeons.domain.Sacerdote;
 import com.osvaldo.adsdungeons.dtos.GuerreiroDTO;
 import com.osvaldo.adsdungeons.dtos.HPDTO;
+import com.osvaldo.adsdungeons.dtos.PersonagemDTO;
 import com.osvaldo.adsdungeons.dtos.SacerdoteDTO;
 import com.osvaldo.adsdungeons.repositories.SacerdoteRepository;
 import jakarta.validation.Valid;
@@ -31,7 +32,7 @@ public class SacerdoteController {
     }
 
     @PostMapping("/sacerdote")
-    public ResponseEntity<Sacerdote> saveSacerdote(@RequestBody @Valid SacerdoteDTO sacerdoteDTO){
+    public ResponseEntity<Sacerdote> saveSacerdote(@RequestBody @Valid PersonagemDTO sacerdoteDTO){
         var sacerdote = new Sacerdote();
         BeanUtils.copyProperties(sacerdoteDTO, sacerdote);
         return ResponseEntity.status(HttpStatus.CREATED).body(sacerdoteRepository.save(sacerdote));

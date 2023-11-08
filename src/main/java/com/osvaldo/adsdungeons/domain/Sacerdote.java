@@ -1,6 +1,7 @@
 package com.osvaldo.adsdungeons.domain;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.OneToMany;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -17,5 +18,8 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Sacerdote extends Personagem implements Serializable {
-    private Integer mana;
+
+    private Character type = 'S';
+
+    private Integer mana = 100;
 }
