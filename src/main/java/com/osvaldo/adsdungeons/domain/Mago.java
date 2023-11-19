@@ -19,12 +19,4 @@ public class Mago extends Personagem implements Serializable {
     private Integer mana = 100;
 
     private Character type = 'M';
-
-    @ManyToMany
-    @JoinTable(
-            name = "FEITICOS_MAGOS",
-            joinColumns= @JoinColumn(name = "mago_id"),
-            inverseJoinColumns = @JoinColumn(name = "feitico_name")
-    )
-    List<Feitico> feiticos = new ArrayList<>();
 }

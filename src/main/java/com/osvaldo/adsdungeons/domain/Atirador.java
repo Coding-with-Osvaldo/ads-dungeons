@@ -23,6 +23,4 @@ public class Atirador extends Personagem implements Serializable {
 
     private Character type = 'A';
 
-    @OneToOne
-    Arma arma;
 }

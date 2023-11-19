@@ -21,7 +21,5 @@ public class Batalha implements Serializable {
     private UUID id;
 
     @OneToMany
-    private List<Personagem> personagensList;
-    @OneToMany
     private List<Inimigo> inimigosList;
 }

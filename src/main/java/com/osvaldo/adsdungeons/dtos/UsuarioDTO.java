@@ -1,7 +1,10 @@
 package com.osvaldo.adsdungeons.dtos;
 
+import com.osvaldo.adsdungeons.domain.Personagem;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
-public record ArmaDTO(@NotBlank String nome, @NotBlank String atributo, @NotBlank String descricao, @NotNull Integer dano) {
+import java.util.List;
+
+public record UsuarioDTO(@NotBlank String nome) {
 }

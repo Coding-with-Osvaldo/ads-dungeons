@@ -18,8 +18,6 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Sacerdote extends Personagem implements Serializable {
-
     private Character type = 'S';
-
     private Integer mana = 100;
 }

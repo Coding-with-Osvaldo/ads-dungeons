@@ -18,9 +18,5 @@ import java.io.Serializable;
 @AllArgsConstructor
 public class Guerreiro extends Personagem implements Serializable {
     private Float forca = 1.5f;
-
     private Character type = 'G';
-
-    @OneToOne
-    Arma arma;
 }

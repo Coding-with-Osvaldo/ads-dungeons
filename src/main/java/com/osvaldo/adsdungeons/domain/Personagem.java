@@ -14,32 +14,10 @@ import java.util.UUID;
 @Getter
 @Setter
 public abstract class Personagem {
-
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
     private String nome;
     private Integer vida = 100;
-    /*
-    @ManyToMany
-    @JoinTable(
-            name = "PersonagensVsInimigos",
-            joinColumns = @JoinColumn(name = "personagem_id"),
-            inverseJoinColumns = @JoinColumn(name = "inimigo_id")
-    )
-    List<Inimigo> inimigos = new ArrayList<>();
-    */
-    /*
-    @ManyToMany
-    @JoinTable(
-            name = "PersonagensVsPersonagens",
-            joinColumns = @JoinColumn(name = "personagem_id"),
-            inverseJoinColumns = @JoinColumn(name = "rival_id")
-    )
-    List<Personagem> personagems = new ArrayList<>();
-     */
 
-
-    @ManyToOne
-    Armadura armadura;
 }
