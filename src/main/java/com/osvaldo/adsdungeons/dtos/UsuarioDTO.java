@@ -6,5 +6,5 @@ import jakarta.validation.constraints.NotNull;
 
 import java.util.List;
 
-public record UsuarioDTO(@NotBlank String nome) {
+public record UsuarioDTO(@NotBlank String nome, @NotNull List<BasicPersonagemDTO> personagens) {
 }

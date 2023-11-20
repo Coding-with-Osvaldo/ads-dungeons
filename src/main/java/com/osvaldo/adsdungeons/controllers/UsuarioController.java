@@ -13,6 +13,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
@@ -25,7 +26,33 @@ public class UsuarioController {
     @PostMapping("/usuario")
     public ResponseEntity<Usuario> saveUsuario(@RequestBody @Valid UsuarioDTO usuarioDTO){
         var usuario = new Usuario();
-        BeanUtils.copyProperties(usuarioDTO, usuario);
+        List<Personagem> list = new ArrayList<>();
+        for(var item : usuarioDTO.personagens()){
+            switch (item.type()){
+                case 'G':
+                    var guerreiro = new Guerreiro();
+                    guerreiro.setNome(item.nome());
+                    list.add(guerreiro);
+                    break;
+                case 'S':
+                    var sacerdote = new Sacerdote();
+                    sacerdote.setNome(item.nome());
+                    list.add(sacerdote);
+                    break;
+                case 'A':
+                    var atirador = new Atirador();
+                    atirador.setNome(item.nome());
+                    list.add(atirador);
+                    break;
+                case 'M':
+                    var mago = new Mago();
+                    mago.setNome(item.nome());
+                    list.add(mago);
+                    break;
+            }
+        }
+        usuario.setNome(usuarioDTO.nome());
+        usuario.setPersonagens(list);
         return ResponseEntity.status(HttpStatus.CREATED).body(usuarioRepository.save(usuario));
     }
 
