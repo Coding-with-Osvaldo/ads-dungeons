@@ -68,7 +68,7 @@ public class UsuarioController {
         return ResponseEntity.status(HttpStatus.CREATED).body(usuarioRepository.save(usuario));
     }
 
-    @PatchMapping("/usuario/{id}")
+    @PatchMapping("/add-character/{id}")
     public ResponseEntity<Usuario> addCharacter(@RequestBody @Valid BasicPersonagemDTO basicPersonagemDTO, @PathVariable(value = "id") UUID id){
         Optional<Usuario> usuarioO = usuarioRepository.findById(id);
         if (usuarioO.isEmpty()){
@@ -97,7 +97,17 @@ public class UsuarioController {
         usuario.setPersonagens(list);
 
         return ResponseEntity.status(HttpStatus.CREATED).body(usuarioRepository.save(usuario));
+    }
 
+    @PatchMapping("/update-score/{id}")
+    public ResponseEntity<Usuario> updateScore(@PathVariable(value = "id") UUID id){
+        Optional<Usuario> usuarioO = usuarioRepository.findById(id);
+        if (usuarioO.isEmpty()){
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+        }
+        var usuario = usuarioO.get();
+        usuario.setScore(usuario.getScore() + 1);
+        return ResponseEntity.status(HttpStatus.OK).body(usuarioRepository.save(usuario));
     }
 
 }

@@ -23,4 +23,6 @@ public class Usuario implements Serializable {
     private String nome;
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private List<Personagem> personagens;
+
+    private Integer score = 0;
 }
