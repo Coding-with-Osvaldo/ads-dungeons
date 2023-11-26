@@ -20,6 +20,6 @@ public class Batalha implements Serializable {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
-    @OneToMany
-    private List<Inimigo> inimigosList;
+    @OneToMany(fetch = FetchType.EAGER)
+    private List<Inimigo> inimigos;
 }

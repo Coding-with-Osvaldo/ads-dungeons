@@ -2,12 +2,9 @@ package com.osvaldo.adsdungeons.controllers;
 
 import com.osvaldo.adsdungeons.domain.*;
 import com.osvaldo.adsdungeons.dtos.BasicPersonagemDTO;
-import com.osvaldo.adsdungeons.dtos.HPDTO;
-import com.osvaldo.adsdungeons.dtos.PersonagemDTO;
 import com.osvaldo.adsdungeons.dtos.UsuarioDTO;
 import com.osvaldo.adsdungeons.repositories.UsuarioRepository;
 import jakarta.validation.Valid;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -22,6 +19,21 @@ import java.util.UUID;
 public class UsuarioController {
     @Autowired
     private UsuarioRepository usuarioRepository;
+
+    @GetMapping("/usuarios")
+    public ResponseEntity<List<Usuario>> getAllUsuario() {
+        List<Usuario> result = usuarioRepository.findAll();
+        return ResponseEntity.status(HttpStatus.OK).body(result);
+    }
+
+    @GetMapping("/usuario/{id}")
+    public ResponseEntity<Usuario> getOneUsuario(@PathVariable(value = "id") UUID id){
+        Optional<Usuario> usuario = usuarioRepository.findById(id);
+        if (usuario.isEmpty()){
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+        }
+        return ResponseEntity.status(HttpStatus.OK).body(usuario.get());
+    }
 
     @PostMapping("/usuario")
     public ResponseEntity<Usuario> saveUsuario(@RequestBody @Valid UsuarioDTO usuarioDTO){

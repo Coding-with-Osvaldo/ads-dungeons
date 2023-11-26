@@ -24,7 +24,7 @@ public class Inimigo implements Serializable {
     private Integer dano;
     private Float vida;
 
-    @ElementCollection
+    @ElementCollection(fetch = FetchType.EAGER)
     private List<String> habilidades = new ArrayList<>();
 
 
