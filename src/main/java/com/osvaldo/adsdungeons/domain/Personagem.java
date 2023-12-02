@@ -13,7 +13,7 @@ import java.util.UUID;
 @Entity @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 @Getter
 @Setter
-public abstract class Personagem {
+public abstract class Personagem{
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;

@@ -2,23 +2,34 @@ package com.osvaldo.adsdungeons.controllers;
 
 import com.osvaldo.adsdungeons.domain.*;
 import com.osvaldo.adsdungeons.dtos.BasicPersonagemDTO;
+import com.osvaldo.adsdungeons.dtos.PartyDTO;
 import com.osvaldo.adsdungeons.dtos.UsuarioDTO;
-import com.osvaldo.adsdungeons.repositories.UsuarioRepository;
+import com.osvaldo.adsdungeons.repositories.*;
 import jakarta.validation.Valid;
+import jakarta.validation.constraints.Null;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
-import java.util.UUID;
+import java.util.*;
 
 @RestController
 public class UsuarioController {
     @Autowired
     private UsuarioRepository usuarioRepository;
+
+    @Autowired
+    private GuerreiroRepository guerreiroRepository;
+
+    @Autowired
+    private AtiradorRepository  atiradorRepository;
+
+    @Autowired
+    private SacerdoteRepository sacerdoteRepository;
+
+    @Autowired
+    private MagoRepository magoRepository;
 
     @GetMapping("/usuarios")
     public ResponseEntity<List<Usuario>> getAllUsuario() {
@@ -91,15 +102,21 @@ public class UsuarioController {
                 personagem = new Mago();
                 break;
         }
-        personagem.setNome(basicPersonagemDTO.nome());
-        list.add(personagem);
+        try {
+            if (personagem == null) throw new Exception();
+            personagem.setNome(basicPersonagemDTO.nome());
+            list.add(personagem);
 
-        usuario.setPersonagens(list);
+            usuario.setPersonagens(list);
 
-        return ResponseEntity.status(HttpStatus.CREATED).body(usuarioRepository.save(usuario));
+            return ResponseEntity.status(HttpStatus.CREATED).body(usuarioRepository.save(usuario));
+        } catch (Exception e){
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+        }
+
     }
 
-    @PatchMapping("/update-score/{id}")
+    @PutMapping("/update-score/{id}")
     public ResponseEntity<Usuario> updateScore(@PathVariable(value = "id") UUID id){
         Optional<Usuario> usuarioO = usuarioRepository.findById(id);
         if (usuarioO.isEmpty()){
@@ -108,6 +125,69 @@ public class UsuarioController {
         var usuario = usuarioO.get();
         usuario.setScore(usuario.getScore() + 1);
         return ResponseEntity.status(HttpStatus.OK).body(usuarioRepository.save(usuario));
+    }
+
+    @PutMapping("/update-party")
+    public ResponseEntity<List<Personagem>> updateParty(@RequestBody @Valid PartyDTO party){
+        List<Personagem> personagens= new ArrayList<>();
+        for (var personagem: party.personagens()) {
+            switch (personagem.type()){
+                case 'G':
+                    if(!Objects.isNull(personagem.vida())){
+                        var guerreiro = guerreiroRepository.findById(personagem.id()).get();
+                        guerreiro.setVida(personagem.vida());
+                        guerreiroRepository.save(guerreiro);
+                        personagens.add(guerreiro);
+                    }
+                    break;
+
+                case 'A':
+                    if(!Objects.isNull(personagem.vida())){
+                        var atirador = atiradorRepository.findById(personagem.id()).get();
+                        atirador.setVida(personagem.vida());
+                        atiradorRepository.save(atirador);
+                        personagens.add(atirador);
+                    }
+                    if(!Objects.isNull(personagem.municao())){
+                        var atirador = atiradorRepository.findById(personagem.id()).get();
+                        atirador.setMunicao(personagem.municao());
+                        atiradorRepository.save(atirador);
+                        personagens.add(atirador);
+                    }
+                    break;
+                case 'S':
+                    if(!Objects.isNull(personagem.vida())){
+                        var sacerdote = sacerdoteRepository.findById(personagem.id()).get();
+                        sacerdote.setVida(personagem.vida());
+                        sacerdoteRepository.save(sacerdote);
+                        personagens.add(sacerdote);
+                    }
+                    if(!Objects.isNull(personagem.mana())){
+                        var sacerdote = sacerdoteRepository.findById(personagem.id()).get();
+                        sacerdote.setMana(personagem.mana());
+                        sacerdoteRepository.save(sacerdote);
+                        personagens.add(sacerdote);
+                    }
+                    break;
+
+                case 'M':
+                    if(!Objects.isNull(personagem.vida())){
+                        var mago = magoRepository.findById(personagem.id()).get();
+                        mago.setVida(personagem.vida());
+                        magoRepository.save(mago);
+                        personagens.add(mago);
+                    }
+                    if(!Objects.isNull(personagem.mana())){
+                        var mago = magoRepository.findById(personagem.id()).get();
+                        mago.setMana(personagem.mana());
+                        magoRepository.save(mago);
+                        personagens.add(mago);
+                    }
+                    break;
+            }
+        }
+
+        return ResponseEntity.status(HttpStatus.OK).body(personagens);
     }
 
 }
