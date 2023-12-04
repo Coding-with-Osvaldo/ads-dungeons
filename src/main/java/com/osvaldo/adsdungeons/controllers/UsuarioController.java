@@ -128,8 +128,7 @@ public class UsuarioController {
     }
 
     @PutMapping("/update-party")
-    public ResponseEntity<List<Personagem>> updateParty(@RequestBody @Valid PartyDTO party){
-        List<Personagem> personagens= new ArrayList<>();
+    public ResponseEntity<String> updateParty(@RequestBody @Valid PartyDTO party){
         for (var personagem: party.personagens()) {
             switch (personagem.type()){
                 case 'G':
@@ -137,7 +136,7 @@ public class UsuarioController {
                         var guerreiro = guerreiroRepository.findById(personagem.id()).get();
                         guerreiro.setVida(personagem.vida());
                         guerreiroRepository.save(guerreiro);
-                        personagens.add(guerreiro);
+
                     }
                     break;
 
@@ -146,13 +145,13 @@ public class UsuarioController {
                         var atirador = atiradorRepository.findById(personagem.id()).get();
                         atirador.setVida(personagem.vida());
                         atiradorRepository.save(atirador);
-                        personagens.add(atirador);
+
                     }
                     if(!Objects.isNull(personagem.municao())){
                         var atirador = atiradorRepository.findById(personagem.id()).get();
                         atirador.setMunicao(personagem.municao());
                         atiradorRepository.save(atirador);
-                        personagens.add(atirador);
+
                     }
                     break;
                 case 'S':
@@ -160,13 +159,13 @@ public class UsuarioController {
                         var sacerdote = sacerdoteRepository.findById(personagem.id()).get();
                         sacerdote.setVida(personagem.vida());
                         sacerdoteRepository.save(sacerdote);
-                        personagens.add(sacerdote);
+
                     }
                     if(!Objects.isNull(personagem.mana())){
                         var sacerdote = sacerdoteRepository.findById(personagem.id()).get();
                         sacerdote.setMana(personagem.mana());
                         sacerdoteRepository.save(sacerdote);
-                        personagens.add(sacerdote);
+
                     }
                     break;
 
@@ -175,19 +174,19 @@ public class UsuarioController {
                         var mago = magoRepository.findById(personagem.id()).get();
                         mago.setVida(personagem.vida());
                         magoRepository.save(mago);
-                        personagens.add(mago);
+
                     }
                     if(!Objects.isNull(personagem.mana())){
                         var mago = magoRepository.findById(personagem.id()).get();
                         mago.setMana(personagem.mana());
                         magoRepository.save(mago);
-                        personagens.add(mago);
+
                     }
                     break;
             }
         }
 
-        return ResponseEntity.status(HttpStatus.OK).body(personagens);
+        return ResponseEntity.status(HttpStatus.OK).body("Updated success");
     }
 
 }
