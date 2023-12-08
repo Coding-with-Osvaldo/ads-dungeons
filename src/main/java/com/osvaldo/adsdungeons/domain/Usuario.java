@@ -21,7 +21,7 @@ public class Usuario implements Serializable {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
     private String nome;
-    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Personagem> personagens;
 
     private Integer score = 0;
