@@ -38,7 +38,6 @@ public class BatalhaController {
     public ResponseEntity<Batalha> saveBatalhas(@RequestBody @Valid BatalhaDTO batalhaDTO){
         var batalha = new Batalha();
         batalha.setInimigos(new ArrayList<>());
-        System.out.println(batalhaDTO.inimigos());
         for (UUID inimigoID : batalhaDTO.inimigos()){
             var inimigo = inimigoRepository.findById(inimigoID);
             batalha.getInimigos().add(inimigo.get());

@@ -22,7 +22,7 @@ public class Batalha implements Serializable {
     private UUID id;
 
 
-    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @ManyToMany(fetch = FetchType.EAGER)
     @JsonManagedReference
     private List<Inimigo> inimigos;
 }
