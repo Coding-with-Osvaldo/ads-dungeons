@@ -1,5 +1,6 @@
 package com.osvaldo.adsdungeons.domain;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -26,6 +27,10 @@ public class Inimigo implements Serializable {
 
     @ElementCollection(fetch = FetchType.EAGER)
     private List<String> habilidades = new ArrayList<>();
+
+    @ManyToMany(mappedBy = "inimigos", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JsonBackReference
+    private List<Batalha> batalhas;
 
 
 }

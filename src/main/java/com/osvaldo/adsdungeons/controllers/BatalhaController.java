@@ -6,6 +6,7 @@ import com.osvaldo.adsdungeons.dtos.PersonagemDTO;
 import com.osvaldo.adsdungeons.dtos.UsuarioDTO;
 import com.osvaldo.adsdungeons.repositories.BatalhaRepository;
 import com.osvaldo.adsdungeons.repositories.InimigosRepository;
+import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Null;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,11 +37,12 @@ public class BatalhaController {
     @PostMapping("/batalha")
     public ResponseEntity<Batalha> saveBatalhas(@RequestBody @Valid BatalhaDTO batalhaDTO){
         var batalha = new Batalha();
-        List<Inimigo> inimigos = new ArrayList<>();
-        for (var inimigoID : batalhaDTO.inimigos()){
-            inimigoRepository.findById(inimigoID).ifPresent(inimigos::add);
+        batalha.setInimigos(new ArrayList<>());
+        System.out.println(batalhaDTO.inimigos());
+        for (UUID inimigoID : batalhaDTO.inimigos()){
+            var inimigo = inimigoRepository.findById(inimigoID);
+            batalha.getInimigos().add(inimigo.get());
         }
-        batalha.setInimigos(inimigos);
         batalhaRepository.save(batalha);
         return ResponseEntity.status(HttpStatus.OK).body(batalha);
     }
@@ -51,7 +53,7 @@ public class BatalhaController {
         return batalha.map(value -> ResponseEntity.status(HttpStatus.OK).body(value)).orElseGet(() -> ResponseEntity.status(HttpStatus.NOT_FOUND).body(null));
     }
 
-    @GetMapping("/batalha-random/")
+    @GetMapping("/batalha-random")
     public ResponseEntity<Batalha> getOneRandomBatalha() {
         List<Batalha> batalha = batalhaRepository.findAll();
         if(batalha.toArray().length == 0){
@@ -59,6 +61,17 @@ public class BatalhaController {
         }
         int random_int = (int) Math.floor(Math.random() * (batalha.toArray().length));
         return ResponseEntity.status(HttpStatus.OK).body(batalha.get(random_int));
+    }
+
+    @DeleteMapping("/batalha/{id}")
+    public ResponseEntity<Object> deleteBatalha(@PathVariable(value = "id") UUID id){
+        Optional<Batalha> batalhaO = batalhaRepository.findById(id);
+        if (batalhaO.isEmpty()){
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+        }
+
+        batalhaRepository.delete(batalhaO.get());
+        return ResponseEntity.status(HttpStatus.OK).body("Batalha deleted successfully");
     }
 
 
