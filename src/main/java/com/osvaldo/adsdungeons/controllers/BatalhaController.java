@@ -38,8 +38,7 @@ public class BatalhaController {
         var batalha = new Batalha();
         List<Inimigo> inimigos = new ArrayList<>();
         for (var inimigoID : batalhaDTO.inimigos()){
-            var inimigoO = inimigoRepository.findById(inimigoID);
-            inimigoO.ifPresent(inimigos::add);
+            inimigoRepository.findById(inimigoID).ifPresent(inimigos::add);
         }
         batalha.setInimigos(inimigos);
         batalhaRepository.save(batalha);
