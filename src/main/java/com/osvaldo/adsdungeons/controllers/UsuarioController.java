@@ -189,4 +189,15 @@ public class UsuarioController {
         return ResponseEntity.status(HttpStatus.OK).body("Updated success");
     }
 
+    @DeleteMapping("/usuario/{id}")
+    public ResponseEntity<Object> deleteUsuario(@PathVariable(value = "id") UUID id){
+        Optional<Usuario> usuarioO = usuarioRepository.findById(id);
+        if (usuarioO.isEmpty()){
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+        }
+
+        usuarioRepository.delete(usuarioO.get());
+        return ResponseEntity.status(HttpStatus.OK).body("Usuario deleted successfully");
+    }
+
 }

@@ -61,4 +61,6 @@ public class BatalhaController {
         int random_int = (int) Math.floor(Math.random() * (batalha.toArray().length));
         return ResponseEntity.status(HttpStatus.OK).body(batalha.get(random_int));
     }
+
+
 }
