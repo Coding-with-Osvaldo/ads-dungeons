@@ -1,8 +1,11 @@
 package com.osvaldo.adsdungeons.controllers;
 
 import com.osvaldo.adsdungeons.domain.*;
+import com.osvaldo.adsdungeons.dtos.BatalhaDTO;
+import com.osvaldo.adsdungeons.dtos.PersonagemDTO;
 import com.osvaldo.adsdungeons.dtos.UsuarioDTO;
 import com.osvaldo.adsdungeons.repositories.BatalhaRepository;
+import com.osvaldo.adsdungeons.repositories.InimigosRepository;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Null;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,10 +24,26 @@ public class BatalhaController {
     @Autowired
     BatalhaRepository batalhaRepository;
 
+    @Autowired
+    InimigosRepository inimigoRepository;
+
     @GetMapping("/batalhas")
     public ResponseEntity<List<Batalha>> getBatalhas(){
         List<Batalha> batalhas = batalhaRepository.findAll();
         return ResponseEntity.status(HttpStatus.OK).body(batalhas);
+    }
+
+    @PostMapping("/batalha")
+    public ResponseEntity<Batalha> saveBatalhas(@RequestBody @Valid BatalhaDTO batalhaDTO){
+        var batalha = new Batalha();
+        List<Inimigo> inimigos = new ArrayList<>();
+        for (var inimigoID : batalhaDTO.inimigos()){
+            var inimigoO = inimigoRepository.findById(inimigoID);
+            inimigoO.ifPresent(inimigos::add);
+        }
+        batalha.setInimigos(inimigos);
+        batalhaRepository.save(batalha);
+        return ResponseEntity.status(HttpStatus.OK).body(batalha);
     }
 
     @GetMapping("/batalha/{id}")
