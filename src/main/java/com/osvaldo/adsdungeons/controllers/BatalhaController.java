@@ -62,16 +62,5 @@ public class BatalhaController {
         return ResponseEntity.status(HttpStatus.OK).body(batalha.get(random_int));
     }
 
-    @DeleteMapping("/batalha/{id}")
-    public ResponseEntity<Object> deleteBatalha(@PathVariable(value = "id") UUID id){
-        Optional<Batalha> batalhaO = batalhaRepository.findById(id);
-        if (batalhaO.isEmpty()){
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
-        }
-
-        batalhaRepository.delete(batalhaO.get());
-        return ResponseEntity.status(HttpStatus.OK).body("Batalha deleted successfully");
-    }
-
 
 }
