@@ -15,7 +15,7 @@ import java.util.UUID;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Usuario implements Serializable {
+public class Usuario implements Serializable, Comparable<Usuario> {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
@@ -25,4 +25,9 @@ public class Usuario implements Serializable {
     private List<Personagem> personagens;
 
     private Integer score = 0;
+
+    @Override
+    public int compareTo(Usuario o) {
+        return this.score.compareTo(o.getScore())*-1;
+    }
 }

@@ -34,6 +34,7 @@ public class UsuarioController {
     @GetMapping("/usuarios")
     public ResponseEntity<List<Usuario>> getAllUsuario() {
         List<Usuario> result = usuarioRepository.findAll();
+        Collections.sort(result);
         return ResponseEntity.status(HttpStatus.OK).body(result);
     }
 
